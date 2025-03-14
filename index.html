@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlexZone Gym - Achieve More, Become More.">
+    <title>FlexZone Gym - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="FlexZone Gym Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="page1.html">Classes</a></li>
+                <li><a href="page2.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slideshow">
+            <img src="images/home1.jpg" class="slide active" alt="Gym workout area">
+            <img src="images/home2.jpg" class="slide" alt="People training in gym">
+            <img src="images/home3.jpg" class="slide" alt="Gym equipment">
+        </div>
+        <div class="hero-text">
+            <h1>Achieve More, Become More</h1>
+            <p>No Limits, Just Results</p>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Welcome to FlexZone Gym</h2>
+        <p>FlexZone is the Gym of The Future!!!.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 FlexZone Gym | All Rights Reserved</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+    
+        function changeSlide() {
+            slides[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add("active");
+        }
+    
+        setInterval(changeSlide, 3000); // Changes image every 3 seconds
+    </script>
+    
+</body>
+</html>
