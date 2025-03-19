@@ -6,6 +6,8 @@
 }
 
 /* Body Styling */
+
+/* Global Styles - Overall page styling */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -23,6 +25,8 @@ header {
 header .logo img {
     height: 50px;
 }
+
+
 
 header nav ul {
     list-style: none;
@@ -174,6 +178,8 @@ footer .social-media a:hover {
 }
 
 /* Media Queries for Responsiveness */
+
+/* Responsive Design - Media Queries */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -197,6 +203,8 @@ footer .social-media a:hover {
 }
 
 /* Global styles */
+
+/* Global Styles - Overall page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -291,6 +299,8 @@ footer .social-media a:hover {
 }
 
 /* Responsive Design */
+
+/* Responsive Design - Media Queries */
 @media screen and (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -675,8 +685,65 @@ footer .social-media a:hover {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.75s ease-in-out;
 }
 .slide.active {
     opacity: 1;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(26, 60, 100); 
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 10px; 
+}
+
+.logo-container h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+.special-offer
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+        .special-offer {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+           padding: 1.5rem 0;
+           margin-top: auto;
+        }
+
+
+
+    
